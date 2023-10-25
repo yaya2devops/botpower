@@ -1,0 +1,20 @@
+{
+  "name": "__qna__31oi0r2lvp_where_do_giraffes_live",
+  "contexts": [
+    "hardquestions"
+  ],
+  "utterances": {
+    "en": [
+      "Real-time tracking of the student's attendance at school",
+      "Receive notifications when the student arrives and leaves the school premises",
+      "View a detailed attendance history to track daily, weekly, and monthly attendance",
+      "Set up geofences for the school area for added security",
+      "Integration with the school's schedule and timetable",
+      "Secure access and authentication for parents",
+      "Support for multiple students in the same family",
+      "In-app messaging to communicate with the school administration"
+    
+    ]
+  },
+  "slots": []
+}

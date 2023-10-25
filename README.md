@@ -1,4 +1,7 @@
-# Chatbot Development Documentation
+# Chatbot Development.
+
+
+These are [abstract notes.](assets/notes/1kouloo-req.txt)
 
 ## Requirements
 
@@ -22,6 +25,8 @@ rm -rf ~/miniconda3/miniconda.sh
 
 ~/miniconda3/bin/conda init bash
 ~/miniconda3/bin/conda init zsh
+
+source ~/.zshrc  
 ```
 
 - Create a py env for chatbot
@@ -40,12 +45,24 @@ python --version
 
 - Using miniconda, get jypterlab
 ```
+
+conda update -n base -c defaults conda
+conda clean -tipsy
+conda install -c conda-forge jupyterlab
+
 conda install jupyterlab 
+
+
+
+
+
+
+pip install jupyterlab
 ```
 
 - Create our workspace and go to it
 ```
-mkdir chatbot && cd chatbot
+mkdir chatbot && cd kouloobot
 ```
 
 - Start a new lab using
@@ -54,9 +71,11 @@ mkdir chatbot && cd chatbot
 jupyter lab
 ```
 
-- You can also access using the following;
+- You can also access using the following; (this)
 ```
 jupyter lab --ip 0.0.0.0 --port 5050
+
+sudo ufw allow 5050
 ```
 
 

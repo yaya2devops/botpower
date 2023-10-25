@@ -1,0 +1,111 @@
+requirements:
+
+--
+docker on it;
+miniconda on it;
+jupyterlab.
+---
+
+building chatbot tools
+dialogflow 
+botpress => free to use :D => the dockerway
+
+
+
+---
+
+
+
+inside jupyer lab 
+1. go to ur terminal (chatbot dir)
+2. install wget zipurl
+3. sudo apt install zip unzip (packages)
+4. unzip file
+
+we care about example => docker compose files 
+we want the one for community.
+
+
+consider the EXTERNAL_URL for ur compose file.
+if u actualy using vm change the ip
+
+also the pw for psql if u want.
+
+
+
+
+#### volumes in docker compose.
+
+u have to create those directories for
+
+mkdir -p ./botpress/data and ./botpress/lanugage 
+
+ give permission to those two
+
+sudo chmod -R 777 two dirs
+
+update both volumes to 	from ./botpress/data to botpress_data and same for posql volume
+
+same for lanugage to botpress_language
+
+
+,now th evolume will be attached to docker not stored to local.
+
+
+## update dockerfile
+
+inside botpres dire go update the img version from dockerhub 
+
+
+### ready to test
+
+in the readme of docker compose u'll find the exact command for running it in community
+
+
+run it. starting with sudo
+
+
+
+
+### To keep botpress maintained.
+
+
+
+to update the version u have o update it in ur dockerfile FROM
+
+but also in CMD att the flag --auto-migrate.
+
+
+ sometimes u need a fresh nstallation.
+
+- You have to clean ur resources
+
+turn down all containers;
+sudo docker-compose down 
+
+remove any containers ;
+sudo docker rm -f $(sudo docker ps -a -q)
+
+
+termiante all;
+sudo docker system prune -a 
+
+- Now u are all ready to get it again!
+
+----
+
+we have to apply our scenario in pen and paper and later translated to our flow.
+using nodes
+connect nodes to another.
+
+
+
+--- 
+
+considerations for when desigining flow
+- make a good delay time using "execute code" and run utility function.
+- make sure the order "on enter" is in a good manner. (important)
+- you can store stuff from convos in storage functions
+- file attached for the user
+
+

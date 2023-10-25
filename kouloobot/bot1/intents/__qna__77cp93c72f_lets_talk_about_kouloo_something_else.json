@@ -1,0 +1,21 @@
+{
+  "name": "__qna__77cp93c72f_lets_talk_about_something_else",
+  "contexts": [
+    "contexts"
+  ],
+  "utterances": {
+    "en": [
+      "Let's talk about a different feature of the app",
+      "I'd like to explore another aspect of the app",
+      "Can we discuss a different topic related to the app?",
+      "Change the app context",
+      "Switch to another app feature",
+      "Explore a different aspect of the application",
+      "Change topic within the app",
+      "Let's discuss something else about the app",
+      "Please talk about a different function of the app",
+      "Switch to a different app section"
+    ]
+  },
+  "slots": []
+}

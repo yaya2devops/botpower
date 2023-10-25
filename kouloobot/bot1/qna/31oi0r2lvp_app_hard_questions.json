@@ -1,0 +1,27 @@
+{
+  "id": "98y7sd3nm2_parents_app_for_school_tracking",
+  "data": {
+    "answers": {
+      "en": [
+        "The school tracking app for parents is a digital tool designed to help parents keep tabs on their children's daily school activities, including attendance, assignments, and events."
+      ]
+    },
+    "questions": {
+      "en": [
+        "What is a school tracking app for parents?",
+        "How does the parents' school tracking app work?",
+        "Tell me about the features of the parent-school app.",
+        "What can I expect from a parent's app for school tracking?",
+        "How can parents use the school tracking app?",
+        "Explain the purpose of a parent's app for school."
+      ]
+    },
+    "redirectFlow": "",
+    "redirectNode": "",
+    "action": "text",
+    "enabled": true,
+    "contexts": [
+      "school_tracking_app"
+    ]
+  }
+}
