@@ -146,6 +146,10 @@ Inside the Botpress directory, update the image version from DockerHub in your D
 
 Refer to the README of your Docker Compose configuration for the exact command to run the community version. Run it using `sudo`.
 
+```
+docker-compose -f docker-compose-community.yaml up --build
+```
+
 ## Keeping Botpress Maintained
 
 To keep Botpress up to date:
@@ -173,12 +177,3 @@ When designing your chatbot's flow, consider the following:
 ## Workflow Representation
 
 It's essential to apply your scenario on paper and later translate it into a chatbot flow using nodes connected to one another.
-
-## Considerations
-
-When designing your chatbot's flow, keep these considerations in mind:
-
-- Ensure proper delay times using "execute code" and utility functions.
-- Organize the "on enter" order effectively.
-- Utilize storage functions to store and retrieve information from conversations.
-- Allow users to attach files for enhanced interactions.

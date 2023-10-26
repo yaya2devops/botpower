@@ -13,11 +13,11 @@ services:
       - DATABASE_URL=postgres://postgres:DB101101@postgres:5435/botpress_db
       - BP_MODULE_NLU_DUCKLINGURL=http://botpress_lang:8000
       - BP_MODULE_NLU_LANGUAGESOURCES=[{"endpoint":"http://botpress_lang:3100"}]
-      - EXTERNAL_URL=http://localhost:3000
+      - EXTERNAL_URL=http://3000-yaya2devops-botpower-5h9jls36ur0.ws-eu105.gitpod.io
     depends_on:
       - postgres
     volumes:
-      - ./botpress/data:/botpress/data
+      - botpress_data:/botpress/data
 
   botpress_lang:
     build:
@@ -30,7 +30,7 @@ services:
       - 3100
       - 8000
     volumes:
-      - ./botpress/language:/botpress/lang
+      - botpress_language:/botpress/lang
 
   postgres:
     image: postgres:11.2-alpine
@@ -54,18 +54,8 @@ services:
         PGADMIN_DEFAULT_PASSWORD: root2222
       ports:
         - "8080:80"
-        
-  football_api:
-      container_name: football-server
-      restart: always
-      build:
-          context: ./football_api
-          dockerfile: Dockerfile
-      environment:
-          model_path: "nlu-20221225-083208-molto-pentatonic.tar.gz"
-          football_api_key: "d20816f6bfmsh4bd8471a7d15f8bp109432jsn5459274f3f36"
-      ports:
-          - "8000:8000"
 
 volumes:
   pgdata:
+  botpress_data:
+  botpress_language:

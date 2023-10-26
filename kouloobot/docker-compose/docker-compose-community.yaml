@@ -13,7 +13,7 @@ services:
       - DATABASE_URL=postgres://postgres:DB101101@postgres:5435/botpress_db
       - BP_MODULE_NLU_DUCKLINGURL=http://botpress_lang:8000
       - BP_MODULE_NLU_LANGUAGESOURCES=[{"endpoint":"http://botpress_lang:3100"}]
-      - EXTERNAL_URL=http://3000-yaya2devops-botpower-28h0jm998fd.ws-eu105.gitpod.io
+      - EXTERNAL_URL=http://3000-yaya2devops-botpower-5h9jls36ur0.ws-eu105.gitpod.io
     depends_on:
       - postgres
     volumes:
