@@ -174,6 +174,58 @@ When designing your chatbot's flow, consider the following:
 - Store data from conversations in storage functions.
 - Provide file attachments for the user.
 
+## AmazonLinux
+
+### Prerequisites
+```
+sudo yum install -y docker
+sudo systemctl enable docker
+sudo yum install -y git
+
+ssh -i ~/rsa.pem ec2-user@ip
+
+```
+
+**Screen Package Use Case**
+
+- Install the "screen" package using `yum` if you haven't already:
+```
+sudo yum install screen
+```
+
+- To start a new screen session named "jupyterlab," u can give it a name open a terminal and type the following command:
+```
+screen -S jupyterlab
+```
+
+
+- To detach from the current screen session and return to the main terminal:
+  - Press Ctrl + A and then Ctrl + D.
+
+- If you've detached from the screen session and want to get back to it, use the following command:
+```
+screen -r jupyterlab
+```
+
+#### Volume config
+
+
+```
+mkdir -p ./botpress/data
+mkdir -p ./botpress/language
+
+sudo chmod -R 777 ./botpress/data
+sudo chmod -R 777 ./botpress/language
+
+
+In volumes, add the following
+
+volumes:
+  - ./botpress/data:/botpress/data
+
+volumes:
+  - ./botpress/language:/botpress/lang
+```
 ## Workflow Representation
 
 It's essential to apply your scenario on paper and later translate it into a chatbot flow using nodes connected to one another.
