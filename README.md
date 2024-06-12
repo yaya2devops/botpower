@@ -1,9 +1,23 @@
 # Chatbot Development 
 
+### Background
 
-These are [abstract notes.](assets/notes/1kouloo-req.txt)
+I started this as a side project while consulting for a customer in Canada, https://www.kouloo.com/en/. 
+
+Their business model was an app to sync parents with their children.
+
+I was working as support technical engineer, a customer facing role among my core other responsibilities.
+
+I handled customer cases and resolved 38 issues related to subscriptions and technical problems. 
+
+I proposed to management that we automate the most frequently raised tickets using a chatbot.
+
+The implementation was so impactful that my organization [adopted it for their own needs](https://www.linkedin.com/posts/nxci_nxci-aiinnovation-cybersecurity-activity-7158138865352929282-Npb7/?utm_source=share&utm_medium=member_desktop) afterword.
+
 
 ## Requirements
+
+These are [abstract notes I brainstormed first.](assets/notes/1kouloo-req.txt)
 
 To set up your environment for building chatbot tools, make sure you have the following components installed:
 
